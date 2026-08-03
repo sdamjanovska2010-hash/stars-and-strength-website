@@ -486,3 +486,277 @@ section {
 .footerText {
   text-align: center;
 }
+
+/* =========================
+   For smaller screens
+   ========================= */
+
+@media (max-width: 900px) {
+  body {
+    padding-top: 0;
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  /* Header */
+
+  header {
+    position: static;
+    height: auto;
+  }
+
+  header .container {
+    flex-direction: column;
+    padding: 10px 0;
+    gap: 8px;
+  }
+
+  .logo img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .logo span {
+    font-size: 24px;
+  }
+
+  header nav {
+    width: 100%;
+    height: auto;
+  }
+
+  header nav ul {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+  }
+
+  header nav ul li {
+    height: auto;
+  }
+
+  header nav ul li a {
+    height: auto;
+    padding: 10px 13px;
+    font-size: 15px;
+  }
+
+  /* Home section */
+
+  .banner {
+    min-height: auto;
+    background-position: 65% center;
+    background-attachment: scroll;
+  }
+
+  #fp {
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0 80px;
+  }
+
+  .banner h1 {
+    width: 100%;
+    max-width: 650px;
+    margin-top: 0;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .banner h1 span {
+    display: inline;
+    line-height: 1.4;
+    padding: 2px 8px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .banner p {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  /* About */
+
+  .about {
+    padding: 60px 0;
+  }
+
+  .about .container {
+    flex-direction: column;
+    gap: 35px;
+    padding: 35px;
+  }
+
+  .aboutImage {
+    flex: none;
+    width: 100%;
+  }
+
+  .aboutContent {
+    width: 100%;
+  }
+
+  /* Mission */
+
+  .mission {
+    padding: 60px 0 80px;
+  }
+
+  #mission .cards {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #mission .cards > div {
+    width: 100%;
+  }
+
+  /* Projects */
+
+  .projects {
+    padding: 60px 0 75px;
+  }
+
+  .projectsDescription {
+    max-width: 850px;
+    margin: 30px auto 0;
+    padding: 0;
+  }
+
+  /* Get Involved */
+
+  .involved {
+    padding: 60px 0;
+  }
+
+  .involved .container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 35px;
+  }
+
+  .bubble {
+    margin: 0;
+  }
+
+  /* Contact */
+
+  .contact {
+    padding: 60px 0 70px;
+  }
+}
+
+/* =========================
+   MOBILE PHONES
+   ========================= */
+
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+  }
+
+  /* Header */
+
+  .logo img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+
+  header nav ul li a {
+    padding: 8px 9px;
+    font-size: 13px;
+  }
+
+  /* Hero */
+
+  #fp {
+    padding: 70px 0 60px;
+  }
+
+  .banner {
+    background-position: 68% center;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .banner h1 span {
+    font-size: 1.85rem;
+  }
+
+  .banner p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* About */
+
+  .about .container {
+    padding: 25px 20px;
+  }
+
+  .aboutTitle {
+    font-size: 26px;
+  }
+
+  /* Section headings */
+
+  .missionTitle,
+  .projectsTitle {
+    width: 100%;
+    max-width: 280px;
+    font-size: 1.7rem;
+  }
+
+  .missionTitle::before,
+  .projectsTitle::before {
+    width: 240px;
+    max-width: 90%;
+  }
+
+  /* Mission cards */
+
+  #mission .cards > div {
+    padding: 28px 22px;
+  }
+
+  /* Get Involved */
+
+  .involved .container {
+    padding: 30px 20px;
+  }
+
+  .involvedTitle {
+    font-size: 22px;
+  }
+
+  /* Contact */
+
+  .contactText {
+    flex-wrap: wrap;
+  }
+
+  .contactLinks a {
+    overflow-wrap: anywhere;
+  }
+
+  /* Footer */
+
+  .footer {
+    padding: 25px 0;
+  }
+
+  .footerBrand span {
+    font-size: 18px;
+  }
+}
