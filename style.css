@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -327,4 +326,163 @@ section {
   color: #e7ad16;
   margin: 0 auto 18px;
   stroke-width: 1.8;
+}
+
+.projects {
+  background-color: #14304e;
+  padding: 70px 0 90px;
+  min-height: auto;
+  scroll-margin-top: 95px;
+}
+
+.projectsTitle {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  margin: 0 auto 50px;
+  text-transform: uppercase;
+  width: 300px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.projectsTitle::before {
+  content: "";
+  position: absolute;
+  width: 290px;
+  height: 2px;
+  background-color: #e7ad16;
+  left: 50%;
+  bottom: -18px;
+  transform: translateX(-50%);
+}
+
+.projectsTitle::after {
+  content: "★";
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  color: #e7ad16;
+  background-color: #14304e;
+  padding: 0 10px;
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.unique {
+  text-align: center;
+  color: #e7ad16;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: italic;
+}
+
+.projectsDescription {
+  color: #fff;
+  text-align: center;
+  padding: 35px;
+  margin: 40px;
+}
+
+.projectsIcon {
+  display: block;
+  width: 42px;
+  height: 42px;
+  color: #e7ad16;
+  margin: 20px auto 0;
+  stroke-width: 1.8;
+}
+
+.involved {
+  padding: 80px 0;
+  background-color: #f5f5f5;
+  scroll-margin-top: 95px;
+}
+
+.involved .container {
+  background-color: rgba(20, 48, 78, 0.94);
+  grid-template-columns: 1.3fr 0.8fr;
+  display: grid;
+  align-items: center;
+  gap: 80px;
+  padding: 60px;
+}
+
+.bubble {
+  background-color: #f5f5f5;
+  margin: 20px;
+  border-radius: 7px;
+  padding: 18px 22px;
+  border-left: 4px solid #e7ad16;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.bubble:hover {
+  transform: translateX(8px);
+  box-shadow: 0 8px 18px rgba(20, 48, 78, 0.94);
+}
+
+.involvedTitle {
+  color: #e7ad16;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.involved .left {
+  max-width: 700px;
+}
+
+.involved .right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact {
+  background-color: #f5f5f5;
+  padding: 60px 0 100px;
+  scroll-margin-top: 95px;
+  text-align: center;
+}
+.contactLinks a {
+  color: #14304e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contactLinks a:hover {
+  text-decoration: underline;
+}
+
+.contactDescription {
+  max-width: 800px;
+  margin: 0 auto 14px;
+}
+
+.contactText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 8px;
+}
+
+.footer {
+  background-color: #14304e;
+  color: #fff;
+  border-top: 4px solid #e7ad16;
+}
+
+.footerLogo {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin-left: 635px;
+}
+
+.footerText {
+  text-align: center;
 }
